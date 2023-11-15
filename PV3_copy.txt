@@ -1,0 +1,4 @@
+hRst = 2 error
+
+RegOpenKey(Software\AHNLAB\APC2\Policy Agent) : 0 error
+
