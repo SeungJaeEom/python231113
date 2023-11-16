@@ -21,7 +21,7 @@ for post in posts:
     price = price.text.replace("\n","").strip()    
     addr = addr.text.replace("\n","").strip()    
     
-    print("{0},{1},{2}".format(title, price, addr).strip())
+    print("{0}|{1}|{2}".format(title, price, addr).strip())
     f.write(f"{title},{price},{addr}\n")
 
 f.close()
