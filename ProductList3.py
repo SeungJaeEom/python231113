@@ -1,9 +1,9 @@
-import sys
+#ProductList3.py
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import pyqtSlot, Qt
 from PyQt5 import uic 
 import sqlite3
-import os.path 
+
 
 #DB파일이 없으면 만들고 있다면 접속한다. 
 if os.path.exists("ProductList.db"):

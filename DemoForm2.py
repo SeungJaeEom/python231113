@@ -10,6 +10,18 @@ from PyQt5.QtWidgets import QWidget
 import requests
 #크롤링
 from bs4 import BeautifulSoup
+########################################
+import sys
+import os
+
+def resource_path(relative_path):
+    """ Get absolute path to resource, works for dev and for PyInstaller """
+    base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
+    return os.path.join(base_path, relative_path)
+
+form = resource_path("DemoForm2.ui")
+#form_class = uic.loadUiType(form)[0]
+########################################
 
 #디자인파일 로딩
 form_class = uic.loadUiType("DemoForm2.ui")[0]
